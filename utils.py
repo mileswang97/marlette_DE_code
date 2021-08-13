@@ -57,7 +57,7 @@ def validate_time(str) -> bool:
     except:
         return False
 
-def error_check(obj_list, date_index_list, time_index_list):
+def error_check(obj_list, date_index_list, time_index_list) -> list:
     append_log(f'RUNNING {datetime.datetime.today()}\n')
     removal_list = list()
     for obj in obj_list:
